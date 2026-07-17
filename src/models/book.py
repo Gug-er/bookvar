@@ -10,5 +10,5 @@ class BookModel(Base):
     title: Mapped[str] = mapped_column(String(100))
     author: Mapped[str] = mapped_column()
     year: Mapped[int] = mapped_column()
-    description: Mapped[str] = mapped_column()
-   
+    annotation: Mapped[str] = mapped_column()
+    genre: Mapped[str] = mapped_column()
