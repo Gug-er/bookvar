@@ -1,22 +1,17 @@
-import asyncio
+import uvicorn
 from fastapi import FastAPI
+
+import sys
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).parent.parent))
+
+from src.api.book import router as book_router
+
 
 app = FastAPI()
 
-@app.get("/home")
-def read_root():
-    return {"Hello": "World"}
+app.include_router(book_router)    
 
-
-@app.get("/{book_id}")
-async def get_book_by_id(book_id: int):
-    return {"book_id": book_id}
-
-
-@app.post("", 
-          summary="Create book", 
-          description="Adds a new book to the collection"
-          )
-async def create_book():
-    ...
-    
+if __name__ == "__main__":
+    uvicorn.run("main:app", reload=True)
