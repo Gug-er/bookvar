@@ -1,10 +1,9 @@
 from fastapi import APIRouter
 
-router = APIRouter(prefix="/book", tags=["book"])
+from src.schemas.book import Book, BookAdd
+from src.repos.book import BookRepository
 
-@router.get("/home")
-def read_root():
-    return {"Hello": "World"}
+router = APIRouter(prefix="/book", tags=["book"])
 
 
 @router.get("/{book_id}",
@@ -12,7 +11,7 @@ def read_root():
             description="Retrieves a book by its ID"
             )
 async def get_book_by_id(book_id: int):
-    return {"book_id": book_id}
+    return await BookRepository().get_one_or_none(id=book_id)
 
 
 @router.post("", 
