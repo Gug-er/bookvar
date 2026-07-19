@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 class BookAdd(BaseModel):
     title: str
@@ -7,5 +7,10 @@ class BookAdd(BaseModel):
     annotation: str
     genre: str
 
-class Book(BookAdd):
+class BookSchema(BookAdd):
     id: int
+    
+    
+    model_config = ConfigDict(
+        from_attributes=True
+    )
