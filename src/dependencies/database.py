@@ -1,4 +1,6 @@
 import asyncio
+from typing import Annotated
+from fastapi import Depends
 
 from src.utils.db_manager import DBManager
 from src.database import async_session_maker
