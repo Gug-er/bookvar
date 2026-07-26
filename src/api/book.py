@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from src.schemas.book import Book, BookAdd
+from src.schemas.book import BookSchema, BookAdd
 from src.dependencies.database import DBDep
 
 

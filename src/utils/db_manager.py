@@ -1,6 +1,6 @@
 import asyncio
 
-from repos.user import UserRepository
+from src.repos.user import UserRepository
 from src.repos.book import BookRepository
 
 
