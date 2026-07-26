@@ -1,5 +1,6 @@
 import asyncio
 
+from repos.user import UserRepository
 from src.repos.book import BookRepository
 
 
@@ -12,6 +13,7 @@ class DBManager:
         self.session = self.session_factory()
 
         self.book = BookRepository(self.session)
+        self.user = UserRepository(self.session)
 
         return self
 

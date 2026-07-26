@@ -1,7 +1,8 @@
 from fastapi import APIRouter
 
 from src.schemas.book import Book, BookAdd
-from src.repos.book import BookRepository
+from src.dependencies.database import DBDep
+
 
 router = APIRouter(prefix="/book", tags=["book"])
 
@@ -10,8 +11,11 @@ router = APIRouter(prefix="/book", tags=["book"])
             summary="Get book by id",
             description="Retrieves a book by its ID"
             )
-async def get_book_by_id(book_id: int):
-    return await BookRepository().get_one_or_none(id=book_id)
+async def get_book_by_id(
+    db: DBDep,
+    book_id: int
+):
+    return await db.get_one_or_none(id=book_id)
 
 
 @router.post("", 
