@@ -1,4 +1,4 @@
-from pydantic import BaseModel, ConfigDict, EmailStr
+from pydantic import BaseModel, ConfigDict, EmailStr, Field
 
 
 class UserRequestAdd(BaseModel):
@@ -21,3 +21,10 @@ class UserSchema(BaseModel):
     model_config = ConfigDict(
         from_attributes=True
     )
+    
+    
+class UserPatch(BaseModel):
+    email: EmailStr | None = Field(default=None)
+    hashed_password: str | None = Field(default=None)
+    first_name: str | None = Field(default=None)
+    last_name: str | None = Field(default=None)
