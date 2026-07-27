@@ -6,7 +6,7 @@ class UserModel(Base):
     __tablename__ = "users"
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    email: Mapped[str] = mapped_column()
+    email: Mapped[str] = mapped_column(unique=True)
     hashed_password: Mapped[str] = mapped_column()
     first_name: Mapped[str] = mapped_column()
     last_name: Mapped[str] = mapped_column()

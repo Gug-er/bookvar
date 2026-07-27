@@ -1,8 +1,8 @@
-"""add users
+"""refactor email in users now unique
 
-Revision ID: 89f9967483d0
+Revision ID: 2a98688d1a51
 Revises: 8b3fadb1d117
-Create Date: 2026-07-26 14:14:15.923739
+Create Date: 2026-07-27 18:43:46.116587
 
 """
 from typing import Sequence, Union
@@ -11,7 +11,7 @@ from alembic import op
 import sqlalchemy as sa
 
 
-revision: str = '89f9967483d0'
+revision: str = '2a98688d1a51'
 down_revision: Union[str, Sequence[str], None] = '8b3fadb1d117'
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -26,7 +26,8 @@ def upgrade() -> None:
     sa.Column('first_name', sa.String(), nullable=False),
     sa.Column('last_name', sa.String(), nullable=False),
     sa.Column('super_user', sa.Boolean(), nullable=False),
-    sa.PrimaryKeyConstraint('id')
+    sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('email')
     )
     op.add_column('books', sa.Column('annotation', sa.String(), nullable=False))
     op.add_column('books', sa.Column('genre', sa.String(), nullable=False))
