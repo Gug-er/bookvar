@@ -19,6 +19,7 @@ async def register_user(
     if is_email_taken:
         return {"error": "Email is already taken"}
     else:
-        await db.post(new_user)
-    
-    return {"status: OK"}
+        registered_user = await db.add(new_user)
+        await db.commit()
+
+    return {"status": "OK", "data": registered_user}

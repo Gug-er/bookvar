@@ -1,4 +1,4 @@
-from sqlalchemy import select
+from sqlalchemy import insert, select
 from pydantic import BaseModel
 
 from src.database import async_session_maker
@@ -29,3 +29,8 @@ class BaseRepository:
             return self.schema.model_validate(model)
         else:
             return None
+        
+        
+    async def add(self, data: BaseModel):
+        query = insert(self.model).values(**data.model_dump())
+        await self.session.execute(query)
