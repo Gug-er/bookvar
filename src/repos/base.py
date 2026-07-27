@@ -32,5 +32,6 @@ class BaseRepository:
         
         
     async def add(self, data: BaseModel):
-        query = insert(self.model).values(**data.model_dump())
-        await self.session.execute(query)
+        query = insert(self.model).values(**data.model_dump()).returning(self.model)
+        result = await self.session.execute(query)
+        return result.scalars().one()
