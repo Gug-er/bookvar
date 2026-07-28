@@ -4,11 +4,17 @@ from pydantic import BaseModel, ConfigDict, EmailStr, Field
 class UserRequestAdd(BaseModel):
     email: EmailStr
     password: str
+    first_name: str
+    last_name: str
+    super_user: bool = False
     
     
 class UserAdd(BaseModel):
     email: EmailStr
     hashed_password: str
+    first_name: str
+    last_name: str
+    super_user: bool = False
 
 
 class UserSchema(BaseModel):
