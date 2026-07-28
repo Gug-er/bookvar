@@ -15,11 +15,7 @@ async def register_user(
 ):
     hashed_password = hash_password(user.password)
     new_user = UserAdd(email=user.email, hashed_password=hashed_password)
-    is_email_taken = await db.get_one_or_none(new_user.email)
-    if is_email_taken:
-        return {"error": "Email is already taken"}
-    else:
-        registered_user = await db.add(new_user)
-        await db.commit()
+    registered_user = await db.add(new_user)
+    await db.commit()
 
     return {"status": "OK", "data": registered_user}
