@@ -28,6 +28,15 @@ class UserSchema(BaseModel):
         from_attributes=True
     )
     
+
+class UserLogin(BaseModel):
+    email: EmailStr
+    password: str
+    
+
+class UserHashedPassword(UserSchema):
+    hashed_password: str
+    
     
 class UserPatch(BaseModel):
     email: EmailStr | None = Field(default=None)
