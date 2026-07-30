@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import String
 
-from src.database import Base
+from db_engine import Base
 
 class BookModel(Base):
     __tablename__ = "books"

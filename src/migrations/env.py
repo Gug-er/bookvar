@@ -9,7 +9,7 @@ from alembic import context
 
 from src.config import settings
 
-from src.database import Base
+from db_engine import Base
 from src.models.book import BookModel
 from src.models.user import UserModel
 

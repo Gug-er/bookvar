@@ -1,7 +1,7 @@
 from sqlalchemy import insert, select, update, delete
 from pydantic import BaseModel
 
-from src.database import async_session_maker
+from db_engine import async_session_maker
 
 
 class BaseRepository:
