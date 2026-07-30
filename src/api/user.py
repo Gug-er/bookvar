@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
 from src.schemas.user import UserAdd, UserRequestAdd
-from src.utils.hashing import hash_password
+from src.services.auth import hash_password
 from src.dependencies.database import DBDep
 
 # registration, authentication, change password or email
