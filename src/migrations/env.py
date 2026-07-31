@@ -7,9 +7,9 @@ from sqlalchemy import pool
 
 from alembic import context
 
-from src.config import settings
+from src.config import db_settings
 
-from db_engine import Base
+from src.db_engine import Base
 from src.models.book import BookModel
 from src.models.user import UserModel
 
@@ -18,7 +18,7 @@ from src.models.user import UserModel
 config = context.config
 
 
-config.set_main_option("sqlalchemy.url", settings.DB_URL)
+config.set_main_option("sqlalchemy.url", db_settings.DB_URL)
 
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
