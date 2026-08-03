@@ -1,4 +1,4 @@
-from select import select
+from sqlalchemy import select
 from pydantic import EmailStr
 
 from src.repos.base import BaseRepository

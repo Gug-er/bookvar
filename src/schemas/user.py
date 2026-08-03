@@ -18,7 +18,7 @@ class UserAdd(BaseModel):
 
 
 class UserSchema(BaseModel):
-    id: int
+    user_id: int
     email: EmailStr
     first_name: str
     last_name: str
