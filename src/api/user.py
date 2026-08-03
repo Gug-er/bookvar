@@ -1,11 +1,12 @@
 from fastapi import APIRouter, HTTPException, Request, Response
 
+from src.dependencies.pagination import PaginationDep
 from src.dependencies.auth import UserIdDep
+from src.dependencies.database import DBDep
 from src.schemas.user import UserSchema, UserAdd, UserRequestAdd, UserLogin
 from src.services.auth import AuthService
-from src.dependencies.database import DBDep
 
-# registration, authentication, change password or email
+
 router = APIRouter(prefix="/user", tags=["user"])
 
 
@@ -40,7 +41,7 @@ async def login_user(
             raise HTTPException(status_code=401, detail="Invalid email or password")
         
         
-@router.get("/user")
+@router.get("/")
 async def get_user_from_token(
     db: DBDep,
     request: Request,
@@ -51,3 +52,23 @@ async def get_user_from_token(
         raise HTTPException(status_code=404, detail="User not found")
     else: 
         return user
+
+
+@router.get("/{user_id}")
+async def get_user_by_id(
+    db: DBDep,
+    user_id: int
+):
+    user = await db.get_one_or_none(user_id=user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    return user
+
+
+@router.get("")
+async def get_list_of_users(
+    db: DBDep,
+    pagination: PaginationDep
+):
+    users = await db.get_all(model=UserSchema, limit=pagination.per_page, offset=pagination.page)
+    return users
