@@ -16,8 +16,14 @@ async def register_user(
     user: UserRequestAdd
 ):
     hashed_password = AuthService().hash_password(user.password)
-    new_user = UserAdd(email=user.email, hashed_password=hashed_password)
-    registered_user = await db.add(new_user)
+    new_user = UserAdd(
+                        email=user.email,
+                        hashed_password=hashed_password,
+                        first_name=user.first_name,
+                        last_name=user.last_name,
+                        super_user=user.super_user
+                )
+    registered_user = await db.user.add(new_user)
     await db.commit()
 
     return {"status": "OK", "data": registered_user}
