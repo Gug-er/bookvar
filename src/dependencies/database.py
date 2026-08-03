@@ -1,9 +1,8 @@
-import asyncio
 from typing import Annotated
 from fastapi import Depends
 
 from src.utils.db_manager import DBManager
-from db_engine import async_session_maker
+from src.db_engine import async_session_maker
 
 
 async def get_db():
