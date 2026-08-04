@@ -1,3 +1,4 @@
+from fastapi import HTTPException
 import jwt, datetime
 from datetime import datetime, timezone, timedelta
 from passlib.context import CryptContext
@@ -25,7 +26,11 @@ class AuthService:
     
 
     def decode_access_token(self, jwt_access_token: str) -> dict:
-        return jwt.decode(jwt_access_token, 
-                    jwt_settings.JWT_SECRET, 
-                    algorithms=[jwt_settings.JWT_ALGORITHM]
-                )
+        try:
+            return jwt.decode(
+                jwt_access_token,
+                jwt_settings.JWT_SECRET,
+                algorithms=[jwt_settings.JWT_ALGORITHM]
+            )
+        except jwt.exceptions.DecodeError:
+            raise HTTPException(status_code=401, detail="Wrong token")
