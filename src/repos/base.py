@@ -13,8 +13,13 @@ class BaseRepository:
         self.session = session
 
 
-    async def get_all(self) -> list[BaseModel]:
+    async def get_all(self, limit: int, offset: int) -> list[BaseModel]:
         query = select(self.model)
+        query = (
+            query
+            .limit(limit)
+            .offset(offset)
+        )
         result = await self.session.execute(query)
         
         return [self.schema.model_validate(model) 
