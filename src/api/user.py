@@ -47,6 +47,14 @@ async def login_user(
             raise HTTPException(status_code=401, detail="Invalid email or password")
 
 
+@router.post("/logout")
+async def logout(
+    response: Response
+):
+    response.delete_cookie(key="jwt_access_token")
+    return {"status": "OK", "detail": "Logged out"}
+
+
 @router.get("/me")
 async def get_me(
     db: DBDep,
@@ -56,19 +64,15 @@ async def get_me(
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
     return user
-        
-        
-@router.get("")
-async def get_user_from_token(
+
+
+@router.get("/")
+async def get_list_of_users(
     db: DBDep,
-    request: Request,
-    user_id: UserIdDep
-) -> UserSchema:
-    user = await db.user.get_one_or_none(user_id=user_id)   
-    if not user:
-        raise HTTPException(status_code=404, detail="User not found")
-    else: 
-        return user
+    pagination: PaginationDep
+):
+    users = await db.user.get_all(limit=pagination.per_page, offset=pagination.page-1)
+    return users
 
 
 @router.get("/{user_id}")
@@ -82,11 +86,14 @@ async def get_user_by_id(
     return user
 
 
-@router.get("")
-async def get_list_of_users(
+@router.delete("/{user_id}")
+async def delete_user(
     db: DBDep,
-    pagination: PaginationDep
+    user_id: int
 ):
-    users = await db.user.get_all(limit=pagination.per_page, offset=pagination.page-1)
-    return users
-
+    user = await db.user.get_one_or_none(user_id=user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    await db.user.delete_filtered(user_id=user_id)
+    await db.commit()
+    return {"status": "OK", "detail": "User deleted"}
