@@ -65,7 +65,7 @@ async def get_user_by_id(
     db: DBDep,
     user_id: int
 ):
-    user = await db.get_one_or_none(user_id=user_id)
+    user = await db.user.get_one_or_none(user_id=user_id)
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
     return user
@@ -76,5 +76,5 @@ async def get_list_of_users(
     db: DBDep,
     pagination: PaginationDep
 ):
-    users = await db.get_all(model=UserSchema, limit=pagination.per_page, offset=pagination.page)
+    users = await db.user.get_all(limit=pagination.per_page, offset=pagination.page-1)
     return users
