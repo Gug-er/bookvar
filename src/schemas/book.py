@@ -8,7 +8,7 @@ class BookAdd(BaseModel):
     genre: str
 
 class BookSchema(BookAdd):
-    id: int
+    book_id: int
     
     
     model_config = ConfigDict(
