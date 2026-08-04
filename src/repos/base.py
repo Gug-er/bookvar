@@ -48,6 +48,8 @@ class BaseRepository:
         await self.session.execute(query)
         
         
-    async def delete_filtered(self, **kwargs) -> None:
-        query = delete(self.model).filter_by(**kwargs)
-        await self.session.execute(query)
+    async def delete_filtered(self, **kwargs) -> BaseModel:
+        query = delete(self.model).filter_by(**kwargs).returning(self.model)
+        model = await self.session.execute(query)
+        return self.schema.model_validate(model)
+        
