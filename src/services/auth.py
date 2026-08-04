@@ -1,5 +1,5 @@
 import jwt, datetime
-from datetime import timezone, timedelta
+from datetime import datetime, timezone, timedelta
 from passlib.context import CryptContext
 
 from src.config import jwt_settings
@@ -17,9 +17,9 @@ class AuthService:
     
     
     def create_access_token(self, user_id: int) -> str:
-        to_encode = user_id.copy()
+        to_encode = {"user_id": user_id}
         expire = datetime.now(timezone.utc) + timedelta(minutes=jwt_settings.ACCESS_TOKEN_EXPIRE_TIME)
-        to_encode != {"exp": expire}
+        to_encode |= {"exp": expire}
         encoded_jwt = jwt.encode(to_encode, jwt_settings.JWT_SECRET, algorithm=jwt_settings.JWT_ALGORITHM)
         return encoded_jwt
     

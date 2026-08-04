@@ -35,12 +35,12 @@ async def login_user(
     login_data: UserLogin,
     response: Response
 ):
-    user = await db.get_user_by_email(login_data.email)
+    user = await db.user.get_user_by_email(login_data.email)
     if not user:
         raise HTTPException(status_code=401, detail="Invalid email or password")
     else:
         if AuthService().verify_password(login_data.password, user.hashed_password):
-            jwt_access_token = AuthService().create_access_token(user.id)
+            jwt_access_token = AuthService().create_access_token(user.user_id)
             response.set_cookie(key="jwt_access_token", value=jwt_access_token)
             return {"jwt_access_token": jwt_access_token}
         else:
