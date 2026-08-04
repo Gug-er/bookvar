@@ -48,6 +48,6 @@ class BaseRepository:
         await self.session.execute(query)
         
         
-    async def delete_by_id(self, id: int) -> None:
-        query = delete(self.model).filter_by(id=id)
+    async def delete_filtered(self, **kwargs) -> None:
+        query = delete(self.model).filter_by(**kwargs)
         await self.session.execute(query)
