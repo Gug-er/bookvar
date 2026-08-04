@@ -45,15 +45,26 @@ async def login_user(
             return {"jwt_access_token": jwt_access_token}
         else:
             raise HTTPException(status_code=401, detail="Invalid email or password")
+
+
+@router.get("/me")
+async def get_me(
+    db: DBDep,
+    user_id: UserIdDep
+):
+    user = await db.user.get_one_or_none(user_id=user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    return user
         
         
-@router.get("/")
+@router.get("")
 async def get_user_from_token(
     db: DBDep,
     request: Request,
     user_id: UserIdDep
 ) -> UserSchema:
-    user = await db.get_one_or_none(user_id)   
+    user = await db.user.get_one_or_none(user_id=user_id)   
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
     else: 
@@ -64,7 +75,7 @@ async def get_user_from_token(
 async def get_user_by_id(
     db: DBDep,
     user_id: int
-):
+) -> UserSchema:
     user = await db.user.get_one_or_none(user_id=user_id)
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
@@ -78,3 +89,4 @@ async def get_list_of_users(
 ):
     users = await db.user.get_all(limit=pagination.per_page, offset=pagination.page-1)
     return users
+

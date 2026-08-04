@@ -4,8 +4,8 @@ from typing import Annotated
 from src.services.auth import AuthService
 
 
-def get_token(request: Request):
-    token = request.cookies.get("jwt_access_token", None)
+def get_token(request: Request) -> str:
+    token: str = request.cookies.get("jwt_access_token", None)
     if not token:
         raise HTTPException(status_code=401, detail="Not authenticated")
     else:
