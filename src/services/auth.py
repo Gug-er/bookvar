@@ -17,8 +17,8 @@ class AuthService:
         return self.pwd_context.verify(password, hashed_password)
     
     
-    def create_access_token(self, user_id: int) -> str:
-        to_encode = {"user_id": user_id}
+    def create_access_token(self, data: dict) -> str:
+        to_encode = data.copy()
         expire = datetime.now(timezone.utc) + timedelta(minutes=jwt_settings.ACCESS_TOKEN_EXPIRE_TIME)
         to_encode |= {"exp": expire}
         encoded_jwt = jwt.encode(to_encode, jwt_settings.JWT_SECRET, algorithm=jwt_settings.JWT_ALGORITHM)
