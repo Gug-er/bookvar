@@ -1,6 +1,9 @@
+from typing import Literal
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class DBSettings(BaseSettings):
+    MODE: Literal["TEST", "LOCAL", "DEVELOPMENT", "PRODUCTION"]
+    
     DB_HOST: str
     DB_PORT: int
     DB_USER: str

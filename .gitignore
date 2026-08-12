@@ -5,6 +5,8 @@ venv
 .vscode
 
 __pycache__
+.pytest_cache/
 
 .db.env
 .jwt.env
+.test.env
