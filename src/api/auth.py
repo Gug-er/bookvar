@@ -21,7 +21,6 @@ async def register_user(
                         hashed_password=hashed_password,
                         first_name=user.first_name,
                         last_name=user.last_name,
-                        super_user=user.super_user
                 )
     registered_user = await db.user.add(new_user)
     await db.commit()
