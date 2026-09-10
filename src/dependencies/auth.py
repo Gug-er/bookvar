@@ -16,4 +16,12 @@ def get_user_id_from_token(token: str = Depends(get_token)) -> int:
     return decoded_token["user_id"]
 
 
+def require_admin(token: str = Depends(get_token)) -> bool:
+    decoded_token = AuthService().decode_access_token(token)
+    if not decoded_token.get("super_user", False):
+        raise HTTPException(status_code=403, detail="Admin access required")
+    return True
+
+
 UserIdDep = Annotated[int, Depends(get_user_id_from_token)]
+AdminDep = Annotated[bool, Depends(require_admin)]

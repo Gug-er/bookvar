@@ -6,7 +6,6 @@ class UserRequestAdd(BaseModel):
     password: str
     first_name: str
     last_name: str
-    super_user: bool = False
     
     
 class UserAdd(BaseModel):
@@ -14,7 +13,6 @@ class UserAdd(BaseModel):
     hashed_password: str
     first_name: str
     last_name: str
-    super_user: bool = False
 
 
 class UserSchema(BaseModel):
@@ -43,3 +41,7 @@ class UserPatch(BaseModel):
     hashed_password: str | None = Field(default=None)
     first_name: str | None = Field(default=None)
     last_name: str | None = Field(default=None)
+    
+    
+class UserPrivilege(BaseModel):
+    super_user: bool = True

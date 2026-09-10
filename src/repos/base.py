@@ -44,12 +44,18 @@ class BaseRepository:
     
     
     async def edit(self, data: BaseModel, exclude_unset: bool = False, **filter_by) -> None:
-        query = update(self.model).filter_by(**filter_by).values(**data.model_dump(exclude_unset=exclude_unset))
-        await self.session.execute(query)
+        query = update(self.model).filter_by(**filter_by).values(data.model_dump(exclude_unset=exclude_unset)).returning(self.model)
+        result = await self.session.execute(query)
+        model = result.scalars().one_or_none()
+        if model:
+            return self.schema.model_validate(model)
+        return None
         
         
     async def delete_filtered(self, **kwargs) -> BaseModel:
         query = delete(self.model).filter_by(**kwargs).returning(self.model)
-        model = await self.session.execute(query)
-        return self.schema.model_validate(model)
-        
+        result = await self.session.execute(query)
+        model = result.scalars().one_or_none()
+        if model:
+            return self.schema.model_validate(model)
+        return None
