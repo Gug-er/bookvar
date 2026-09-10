@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 
 from src.schemas.book import BookSchema, BookAdd
 from src.dependencies.database import DBDep
@@ -29,7 +29,7 @@ async def get_list_of_books(
     db: DBDep,
     pagination: PaginationDep
 ):
-    return await db.book.get_all(limit=pagination.per_page, offset=pagination.page-1)
+    return await db.book.get_all(limit=pagination.per_page, offset=(pagination.page-1)*pagination.per_page)
 
 
 @router.get("/{book_id}",
@@ -40,4 +40,7 @@ async def get_book_by_id(
     db: DBDep,
     book_id: int
 ):
-    return await db.book.get_one_or_none(book_id=book_id)
+    book = await db.book.get_one_or_none(book_id=book_id)
+    if not book:
+        raise HTTPException(status_code=404, detail="Book not found")
+    return book
