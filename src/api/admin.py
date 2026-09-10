@@ -3,7 +3,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from src.dependencies.database import DBDep
 from src.dependencies.pagination import PaginationDep
 from src.dependencies.auth import require_admin
-from src.schemas.user import UserPrivillege
+from src.schemas.user import UserPrivilege
 from src.schemas.book import BookPatch
 
 router = APIRouter(prefix="/admin", tags=["admin"], dependencies=[Depends(require_admin)])
@@ -22,7 +22,7 @@ async def privilege_user(
     db: DBDep,
     user_id: int
 ):
-    user = UserPrivillege(super_user=True)
+    user = UserPrivilege(super_user=True)
     privileged_user = await db.user.edit(data=user, exclude_unset=True, user_id=user_id)
     if not privileged_user:
         raise HTTPException(status_code=404, detail="User not found")

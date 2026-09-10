@@ -43,5 +43,5 @@ class UserPatch(BaseModel):
     last_name: str | None = Field(default=None)
     
     
-class UserPrivillege(BaseModel):
+class UserPrivilege(BaseModel):
     super_user: bool = True
