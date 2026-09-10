@@ -41,3 +41,7 @@ class UserPatch(BaseModel):
     hashed_password: str | None = Field(default=None)
     first_name: str | None = Field(default=None)
     last_name: str | None = Field(default=None)
+    
+    
+class UserPrivillege(BaseModel):
+    super_user: bool = True
