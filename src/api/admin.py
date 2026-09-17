@@ -41,7 +41,7 @@ async def edit_book_info(
     if not edited_book:
         raise HTTPException(status_code=404, detail="Book not found")
     await db.commit()
-    return {"status": "OK", "detail": "Book info been chenged"}
+    return {"status": "OK", "detail": "Book info been changed"}
 
 
 @router.delete("/user/{user_id}")
