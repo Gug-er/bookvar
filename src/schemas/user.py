@@ -45,3 +45,7 @@ class UserPatch(BaseModel):
     
 class UserPrivilege(BaseModel):
     super_user: bool = True
+    
+
+class UserAdminAdd(UserAdd):
+    super_user: bool = True 
