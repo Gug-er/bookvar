@@ -1,0 +1,402 @@
+[
+  {
+    "book_id": 1,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "year": 1813,
+    "annotation": "A witty portrait of manners and marriage in Regency England, centered on the sharp-tongued Elizabeth Bennet and the proud Mr. Darcy.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 2,
+    "title": "Wuthering Heights",
+    "author": "Emily Bronte",
+    "year": 1847,
+    "annotation": "A dark, obsessive love story set on the Yorkshire moors, following the destructive bond between Heathcliff and Catherine Earnshaw.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 3,
+    "title": "Jane Eyre",
+    "author": "Charlotte Bronte",
+    "year": 1847,
+    "annotation": "An orphaned governess navigates hardship, love, and independence in a story of moral resilience and self-respect.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 4,
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "year": 1861,
+    "annotation": "A young orphan named Pip rises through unexpected wealth while confronting the true cost of ambition and class.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 5,
+    "title": "Oliver Twist",
+    "author": "Charles Dickens",
+    "year": 1838,
+    "annotation": "An orphan boy escapes a workhouse into London's criminal underworld, exposing Victorian poverty and cruelty.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 6,
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "year": 1897,
+    "annotation": "A Transylvanian count travels to England, unleashing terror as a group of Victorians race to stop his spreading curse.",
+    "genre": "horror"
+  },
+  {
+    "book_id": 7,
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "year": 1818,
+    "annotation": "A scientist's creation of life leads to tragedy, exploring ambition, isolation, and the consequences of playing god.",
+    "genre": "horror"
+  },
+  {
+    "book_id": 8,
+    "title": "The Strange Case of Dr Jekyll and Mr Hyde",
+    "author": "Robert Louis Stevenson",
+    "year": 1886,
+    "annotation": "A respectable doctor's secret experiment unleashes a violent alter ego, probing the duality of human nature.",
+    "genre": "horror"
+  },
+  {
+    "book_id": 9,
+    "title": "The Hound of the Baskervilles",
+    "author": "Arthur Conan Doyle",
+    "year": 1902,
+    "annotation": "Sherlock Holmes investigates a legendary curse and a spectral hound terrorizing an aristocratic family on the moors.",
+    "genre": "detective"
+  },
+  {
+    "book_id": 10,
+    "title": "A Study in Scarlet",
+    "author": "Arthur Conan Doyle",
+    "year": 1887,
+    "annotation": "The first meeting of Sherlock Holmes and Dr. Watson, unraveling a murder tied to a decades-old revenge plot.",
+    "genre": "detective"
+  },
+  {
+    "book_id": 11,
+    "title": "The Turn of the Screw",
+    "author": "Henry James",
+    "year": 1898,
+    "annotation": "A governess grows convinced that malevolent ghosts are threatening the two children in her care.",
+    "genre": "horror"
+  },
+  {
+    "book_id": 12,
+    "title": "Rebecca",
+    "author": "Daphne du Maurier",
+    "year": 1938,
+    "annotation": "A young bride is haunted by the lingering presence of her husband's first wife in a gothic Cornish mansion.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 13,
+    "title": "And Then There Were None",
+    "author": "Agatha Christie",
+    "year": 1939,
+    "annotation": "Ten strangers are lured to an isolated island and killed one by one according to an ominous nursery rhyme.",
+    "genre": "detective"
+  },
+  {
+    "book_id": 14,
+    "title": "Murder on the Orient Express",
+    "author": "Agatha Christie",
+    "year": 1934,
+    "annotation": "Detective Hercule Poirot must solve a murder aboard a snowbound train filled with suspects hiding secrets.",
+    "genre": "detective"
+  },
+  {
+    "book_id": 15,
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "year": 1890,
+    "annotation": "A man stays eternally youthful while his portrait absorbs the moral decay of his hedonistic life.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 16,
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 1949,
+    "annotation": "In a totalitarian surveillance state, a man's quiet rebellion against the Party leads to devastating consequences.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 17,
+    "title": "Vanity Fair",
+    "author": "William Thackeray",
+    "year": 1848,
+    "annotation": "A satirical chronicle of social climbing and ambition, following the cunning Becky Sharp through English society.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 18,
+    "title": "Middlemarch",
+    "author": "George Eliot",
+    "year": 1871,
+    "annotation": "Interwoven lives in a provincial English town explore marriage, idealism, and disappointed ambition.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 19,
+    "title": "The War of the Worlds",
+    "author": "H.G. Wells",
+    "year": 1898,
+    "annotation": "A Martian invasion devastates England, told through one man's harrowing account of survival and terror.",
+    "genre": "horror"
+  },
+  {
+    "book_id": 20,
+    "title": "Wuthering Heights (annotated)",
+    "author": "Emily Bronte",
+    "year": 1847,
+    "annotation": "A study edition of the classic tale of doomed love and vengeance on the English moors.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 21,
+    "title": "Les Miserables",
+    "author": "Victor Hugo",
+    "year": 1862,
+    "annotation": "An ex-convict seeks redemption while pursued by a relentless inspector against the backdrop of revolutionary France.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 22,
+    "title": "The Hunchback of Notre-Dame",
+    "author": "Victor Hugo",
+    "year": 1831,
+    "annotation": "A deformed bell-ringer and a gypsy dancer become entangled in tragedy amid medieval Paris.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 23,
+    "title": "Madame Bovary",
+    "author": "Gustave Flaubert",
+    "year": 1857,
+    "annotation": "A provincial doctor's wife pursues romantic fantasies that lead to ruin and despair.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 24,
+    "title": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "year": 1844,
+    "annotation": "An innocent man escapes wrongful imprisonment and returns under a new identity to enact an elaborate revenge.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 25,
+    "title": "The Three Musketeers",
+    "author": "Alexandre Dumas",
+    "year": 1844,
+    "annotation": "A young swordsman joins three legendary musketeers in court intrigue and daring adventure in 17th-century France.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 26,
+    "title": "Le Pere Goriot",
+    "author": "Honore de Balzac",
+    "year": 1835,
+    "annotation": "An aging father's devotion to his ungrateful daughters unfolds alongside a young man's moral corruption in Paris.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 27,
+    "title": "The Phantom of the Opera",
+    "author": "Gaston Leroux",
+    "year": 1910,
+    "annotation": "A disfigured musical genius haunts the Paris Opera House, obsessed with a young singer.",
+    "genre": "horror"
+  },
+  {
+    "book_id": 28,
+    "title": "Therese Raquin",
+    "author": "Emile Zola",
+    "year": 1867,
+    "annotation": "A woman and her lover are consumed by guilt after murdering her husband, unraveling under psychological torment.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 29,
+    "title": "Germinal",
+    "author": "Emile Zola",
+    "year": 1885,
+    "annotation": "A brutal strike among French coal miners exposes class struggle and the human cost of industrial exploitation.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 30,
+    "title": "The Stranger",
+    "author": "Albert Camus",
+    "year": 1942,
+    "annotation": "A detached man's indifferent reaction to his mother's death and a subsequent killing explores absurdist philosophy.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 31,
+    "title": "Journey to the Center of the Earth",
+    "author": "Jules Verne",
+    "year": 1864,
+    "annotation": "A professor and his companions descend through a volcanic passage into a fantastical subterranean world.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 32,
+    "title": "Twenty Thousand Leagues Under the Sea",
+    "author": "Jules Verne",
+    "year": 1870,
+    "annotation": "Captain Nemo pilots the submarine Nautilus through underwater wonders and dangers unknown to the surface world.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 33,
+    "title": "Bel-Ami",
+    "author": "Guy de Maupassant",
+    "year": 1885,
+    "annotation": "An ambitious former soldier claws his way up Parisian society through manipulation and seduction.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 34,
+    "title": "The Necklace and Other Stories",
+    "author": "Guy de Maupassant",
+    "year": 1884,
+    "annotation": "A collection of sharp, ironic tales about vanity, deception, and the fragility of social status.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 35,
+    "title": "Nana",
+    "author": "Emile Zola",
+    "year": 1880,
+    "annotation": "A courtesan's rise through Parisian theater and high society exposes the decadence and hypocrisy beneath it.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 36,
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "year": 1866,
+    "annotation": "A destitute former student commits murder to test his own theory of moral exceptionalism, then unravels under guilt.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 37,
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "year": 1880,
+    "annotation": "Three brothers and their depraved father collide in a story of faith, doubt, and patricide in provincial Russia.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 38,
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "year": 1869,
+    "annotation": "Sweeping across the Napoleonic Wars, aristocratic families navigate love, loss, and the tides of history.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 39,
+    "title": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "year": 1877,
+    "annotation": "A married aristocrat's passionate affair leads to social ruin, set against another character's quiet search for meaning.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 40,
+    "title": "Dead Souls",
+    "author": "Nikolai Gogol",
+    "year": 1842,
+    "annotation": "A con man travels the Russian countryside buying the records of deceased serfs in a satirical scheme.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 41,
+    "title": "The Overcoat",
+    "author": "Nikolai Gogol",
+    "year": 1842,
+    "annotation": "A poor clerk's prized new coat brings him fleeting dignity before tragedy strikes in this satire of bureaucracy.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 42,
+    "title": "Fathers and Sons",
+    "author": "Ivan Turgenev",
+    "year": 1862,
+    "annotation": "A young nihilist's return home ignites generational conflict over tradition, science, and belief.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 43,
+    "title": "The Master and Margarita",
+    "author": "Mikhail Bulgakov",
+    "year": 1967,
+    "annotation": "The Devil visits Soviet Moscow, unleashing chaos that intertwines with a suppressed novel about Pontius Pilate.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 44,
+    "title": "Eugene Onegin",
+    "author": "Alexander Pushkin",
+    "year": 1833,
+    "annotation": "A jaded aristocrat rejects a young woman's love, only to face devastating regret years later.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 45,
+    "title": "The Queen of Spades",
+    "author": "Alexander Pushkin",
+    "year": 1834,
+    "annotation": "An officer's obsession with an old countess's secret gambling formula spirals into madness and ruin.",
+    "genre": "horror"
+  },
+  {
+    "book_id": 46,
+    "title": "Viy",
+    "author": "Nikolai Gogol",
+    "year": 1835,
+    "annotation": "A young seminarian is tormented by supernatural horrors while praying over the body of a mysterious witch.",
+    "genre": "horror"
+  },
+  {
+    "book_id": 47,
+    "title": "The Idiot",
+    "author": "Fyodor Dostoevsky",
+    "year": 1869,
+    "annotation": "A guileless, kind-hearted prince returns to Russian society and is nearly destroyed by its cynicism and greed.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 48,
+    "title": "Demons",
+    "author": "Fyodor Dostoevsky",
+    "year": 1872,
+    "annotation": "A group of revolutionaries' nihilistic plotting brings chaos and tragedy to a provincial Russian town.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 49,
+    "title": "Notes from Underground",
+    "author": "Fyodor Dostoevsky",
+    "year": 1864,
+    "annotation": "A bitter, isolated narrator's rambling confessions dissect free will, spite, and alienation.",
+    "genre": "novel"
+  },
+  {
+    "book_id": 50,
+    "title": "A Hero of Our Time",
+    "author": "Mikhail Lermontov",
+    "year": 1840,
+    "annotation": "A cynical, self-destructive officer's adventures in the Caucasus reveal the disillusionment of his generation.",
+    "genre": "novel"
+  }
+]
