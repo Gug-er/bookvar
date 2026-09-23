@@ -8,19 +8,6 @@ from src.dependencies.pagination import PaginationDep
 router = APIRouter(prefix="/book", tags=["book"])
 
 
-@router.post("", 
-          summary="Create book", 
-          description="Adds a new book to the collection"
-          )
-async def create_book(
-    db: DBDep,
-    book: BookAdd
-):
-  await db.book.add(book)
-  await db.commit()
-  return {"status": "OK", "data": book}
-
-
 @router.get("",
             summary="Get list of all books",
             description="Retrieves a list of all books"
