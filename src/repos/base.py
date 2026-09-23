@@ -44,7 +44,7 @@ class BaseRepository:
 
 
     async def add_bulk(self, data: list[BaseModel]) -> None:
-        query = insert(self.model).values(item.model_dump() for item in data)
+        query = insert(self.model).values([item.model_dump() for item in data])
         await self.session.execute(query)
     
     

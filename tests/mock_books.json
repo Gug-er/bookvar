@@ -1,6 +1,5 @@
 [
   {
-    "book_id": 1,
     "title": "Pride and Prejudice",
     "author": "Jane Austen",
     "year": 1813,
@@ -8,7 +7,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 2,
     "title": "Wuthering Heights",
     "author": "Emily Bronte",
     "year": 1847,
@@ -16,7 +14,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 3,
     "title": "Jane Eyre",
     "author": "Charlotte Bronte",
     "year": 1847,
@@ -24,7 +21,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 4,
     "title": "Great Expectations",
     "author": "Charles Dickens",
     "year": 1861,
@@ -32,7 +28,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 5,
     "title": "Oliver Twist",
     "author": "Charles Dickens",
     "year": 1838,
@@ -40,7 +35,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 6,
     "title": "Dracula",
     "author": "Bram Stoker",
     "year": 1897,
@@ -48,7 +42,6 @@
     "genre": "horror"
   },
   {
-    "book_id": 7,
     "title": "Frankenstein",
     "author": "Mary Shelley",
     "year": 1818,
@@ -56,7 +49,6 @@
     "genre": "horror"
   },
   {
-    "book_id": 8,
     "title": "The Strange Case of Dr Jekyll and Mr Hyde",
     "author": "Robert Louis Stevenson",
     "year": 1886,
@@ -64,7 +56,6 @@
     "genre": "horror"
   },
   {
-    "book_id": 9,
     "title": "The Hound of the Baskervilles",
     "author": "Arthur Conan Doyle",
     "year": 1902,
@@ -72,7 +63,6 @@
     "genre": "detective"
   },
   {
-    "book_id": 10,
     "title": "A Study in Scarlet",
     "author": "Arthur Conan Doyle",
     "year": 1887,
@@ -80,7 +70,6 @@
     "genre": "detective"
   },
   {
-    "book_id": 11,
     "title": "The Turn of the Screw",
     "author": "Henry James",
     "year": 1898,
@@ -88,7 +77,6 @@
     "genre": "horror"
   },
   {
-    "book_id": 12,
     "title": "Rebecca",
     "author": "Daphne du Maurier",
     "year": 1938,
@@ -96,7 +84,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 13,
     "title": "And Then There Were None",
     "author": "Agatha Christie",
     "year": 1939,
@@ -104,7 +91,6 @@
     "genre": "detective"
   },
   {
-    "book_id": 14,
     "title": "Murder on the Orient Express",
     "author": "Agatha Christie",
     "year": 1934,
@@ -112,7 +98,6 @@
     "genre": "detective"
   },
   {
-    "book_id": 15,
     "title": "The Picture of Dorian Gray",
     "author": "Oscar Wilde",
     "year": 1890,
@@ -120,7 +105,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 16,
     "title": "1984",
     "author": "George Orwell",
     "year": 1949,
@@ -128,7 +112,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 17,
     "title": "Vanity Fair",
     "author": "William Thackeray",
     "year": 1848,
@@ -136,7 +119,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 18,
     "title": "Middlemarch",
     "author": "George Eliot",
     "year": 1871,
@@ -144,7 +126,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 19,
     "title": "The War of the Worlds",
     "author": "H.G. Wells",
     "year": 1898,
@@ -152,7 +133,6 @@
     "genre": "horror"
   },
   {
-    "book_id": 20,
     "title": "Wuthering Heights (annotated)",
     "author": "Emily Bronte",
     "year": 1847,
@@ -160,7 +140,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 21,
     "title": "Les Miserables",
     "author": "Victor Hugo",
     "year": 1862,
@@ -168,7 +147,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 22,
     "title": "The Hunchback of Notre-Dame",
     "author": "Victor Hugo",
     "year": 1831,
@@ -176,7 +154,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 23,
     "title": "Madame Bovary",
     "author": "Gustave Flaubert",
     "year": 1857,
@@ -184,7 +161,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 24,
     "title": "The Count of Monte Cristo",
     "author": "Alexandre Dumas",
     "year": 1844,
@@ -192,7 +168,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 25,
     "title": "The Three Musketeers",
     "author": "Alexandre Dumas",
     "year": 1844,
@@ -200,7 +175,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 26,
     "title": "Le Pere Goriot",
     "author": "Honore de Balzac",
     "year": 1835,
@@ -208,7 +182,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 27,
     "title": "The Phantom of the Opera",
     "author": "Gaston Leroux",
     "year": 1910,
@@ -216,7 +189,6 @@
     "genre": "horror"
   },
   {
-    "book_id": 28,
     "title": "Therese Raquin",
     "author": "Emile Zola",
     "year": 1867,
@@ -224,7 +196,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 29,
     "title": "Germinal",
     "author": "Emile Zola",
     "year": 1885,
@@ -232,7 +203,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 30,
     "title": "The Stranger",
     "author": "Albert Camus",
     "year": 1942,
@@ -240,7 +210,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 31,
     "title": "Journey to the Center of the Earth",
     "author": "Jules Verne",
     "year": 1864,
@@ -248,7 +217,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 32,
     "title": "Twenty Thousand Leagues Under the Sea",
     "author": "Jules Verne",
     "year": 1870,
@@ -256,7 +224,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 33,
     "title": "Bel-Ami",
     "author": "Guy de Maupassant",
     "year": 1885,
@@ -264,7 +231,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 34,
     "title": "The Necklace and Other Stories",
     "author": "Guy de Maupassant",
     "year": 1884,
@@ -272,7 +238,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 35,
     "title": "Nana",
     "author": "Emile Zola",
     "year": 1880,
@@ -280,7 +245,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 36,
     "title": "Crime and Punishment",
     "author": "Fyodor Dostoevsky",
     "year": 1866,
@@ -288,7 +252,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 37,
     "title": "The Brothers Karamazov",
     "author": "Fyodor Dostoevsky",
     "year": 1880,
@@ -296,7 +259,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 38,
     "title": "War and Peace",
     "author": "Leo Tolstoy",
     "year": 1869,
@@ -304,7 +266,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 39,
     "title": "Anna Karenina",
     "author": "Leo Tolstoy",
     "year": 1877,
@@ -312,7 +273,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 40,
     "title": "Dead Souls",
     "author": "Nikolai Gogol",
     "year": 1842,
@@ -320,7 +280,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 41,
     "title": "The Overcoat",
     "author": "Nikolai Gogol",
     "year": 1842,
@@ -328,7 +287,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 42,
     "title": "Fathers and Sons",
     "author": "Ivan Turgenev",
     "year": 1862,
@@ -336,7 +294,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 43,
     "title": "The Master and Margarita",
     "author": "Mikhail Bulgakov",
     "year": 1967,
@@ -344,7 +301,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 44,
     "title": "Eugene Onegin",
     "author": "Alexander Pushkin",
     "year": 1833,
@@ -352,7 +308,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 45,
     "title": "The Queen of Spades",
     "author": "Alexander Pushkin",
     "year": 1834,
@@ -360,7 +315,6 @@
     "genre": "horror"
   },
   {
-    "book_id": 46,
     "title": "Viy",
     "author": "Nikolai Gogol",
     "year": 1835,
@@ -368,7 +322,6 @@
     "genre": "horror"
   },
   {
-    "book_id": 47,
     "title": "The Idiot",
     "author": "Fyodor Dostoevsky",
     "year": 1869,
@@ -376,7 +329,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 48,
     "title": "Demons",
     "author": "Fyodor Dostoevsky",
     "year": 1872,
@@ -384,7 +336,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 49,
     "title": "Notes from Underground",
     "author": "Fyodor Dostoevsky",
     "year": 1864,
@@ -392,7 +343,6 @@
     "genre": "novel"
   },
   {
-    "book_id": 50,
     "title": "A Hero of Our Time",
     "author": "Mikhail Lermontov",
     "year": 1840,

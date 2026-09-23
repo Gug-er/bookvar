@@ -1,14 +1,12 @@
 [
   {
-    "user_id": 1,
     "email": "alice.morgan@example.com",
     "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
     "first_name": "Alice",
     "last_name": "Morgan",
-    "super_user": true
+    "super_user": false
   },
   {
-    "user_id": 2,
     "email": "ben.carter@example.com",
     "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
     "first_name": "Ben",
@@ -16,7 +14,6 @@
     "super_user": false
   },
   {
-    "user_id": 3,
     "email": "clara.hughes@example.com",
     "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
     "first_name": "Clara",
@@ -24,7 +21,6 @@
     "super_user": false
   },
   {
-    "user_id": 4,
     "email": "daniel.ross@example.com",
     "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
     "first_name": "Daniel",
@@ -32,7 +28,6 @@
     "super_user": false
   },
   {
-    "user_id": 5,
     "email": "emma.bennett@example.com",
     "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
     "first_name": "Emma",
@@ -40,7 +35,6 @@
     "super_user": false
   },
   {
-    "user_id": 6,
     "email": "farid.khan@example.com",
     "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
     "first_name": "Farid",
@@ -48,7 +42,6 @@
     "super_user": false
   },
   {
-    "user_id": 7,
     "email": "grace.wilson@example.com",
     "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
     "first_name": "Grace",
@@ -56,7 +49,6 @@
     "super_user": false
   },
   {
-    "user_id": 8,
     "email": "henry.taylor@example.com",
     "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
     "first_name": "Henry",
@@ -64,7 +56,6 @@
     "super_user": false
   },
   {
-    "user_id": 9,
     "email": "isla.thompson@example.com",
     "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
     "first_name": "Isla",
@@ -72,7 +63,6 @@
     "super_user": false
   },
   {
-    "user_id": 10,
     "email": "jonathan.lee@example.com",
     "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
     "first_name": "Jonathan",
