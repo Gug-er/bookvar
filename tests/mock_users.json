@@ -1,0 +1,72 @@
+[
+  {
+    "email": "alice.morgan@example.com",
+    "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
+    "first_name": "Alice",
+    "last_name": "Morgan",
+    "super_user": false
+  },
+  {
+    "email": "ben.carter@example.com",
+    "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
+    "first_name": "Ben",
+    "last_name": "Carter",
+    "super_user": false
+  },
+  {
+    "email": "clara.hughes@example.com",
+    "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
+    "first_name": "Clara",
+    "last_name": "Hughes",
+    "super_user": false
+  },
+  {
+    "email": "daniel.ross@example.com",
+    "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
+    "first_name": "Daniel",
+    "last_name": "Ross",
+    "super_user": false
+  },
+  {
+    "email": "emma.bennett@example.com",
+    "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
+    "first_name": "Emma",
+    "last_name": "Bennett",
+    "super_user": false
+  },
+  {
+    "email": "farid.khan@example.com",
+    "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
+    "first_name": "Farid",
+    "last_name": "Khan",
+    "super_user": false
+  },
+  {
+    "email": "grace.wilson@example.com",
+    "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
+    "first_name": "Grace",
+    "last_name": "Wilson",
+    "super_user": false
+  },
+  {
+    "email": "henry.taylor@example.com",
+    "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
+    "first_name": "Henry",
+    "last_name": "Taylor",
+    "super_user": false
+  },
+  {
+    "email": "isla.thompson@example.com",
+    "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
+    "first_name": "Isla",
+    "last_name": "Thompson",
+    "super_user": false
+  },
+  {
+    "email": "jonathan.lee@example.com",
+    "hashed_password": "$2b$12$rNN09FKFKBOxnwBPqt8OMegFyNCTIdT0Zjk39llWFkWY8dhA8yn3e",
+    "first_name": "Jonathan",
+    "last_name": "Lee",
+    "super_user": false
+  }
+]

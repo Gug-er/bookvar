@@ -4,9 +4,23 @@ from src.dependencies.database import DBDep
 from src.dependencies.pagination import PaginationDep
 from src.dependencies.auth import require_admin
 from src.schemas.user import UserPrivilege
-from src.schemas.book import BookPatch
+from src.schemas.book import BookAdd, BookPatch
 
 router = APIRouter(prefix="/admin", tags=["admin"], dependencies=[Depends(require_admin)])
+
+
+@router.post("", 
+          summary="Create book", 
+          description="Adds a new book to the collection"
+          )
+async def create_book(
+    db: DBDep,
+    book: BookAdd
+):
+  await db.book.add(book)
+  await db.commit()
+  return {"status": "OK", "data": book}
+
 
 @router.get("/")
 async def get_list_of_users(
@@ -41,7 +55,7 @@ async def edit_book_info(
     if not edited_book:
         raise HTTPException(status_code=404, detail="Book not found")
     await db.commit()
-    return {"status": "OK", "detail": "Book info been chenged"}
+    return {"status": "OK", "detail": "Book info been changed"}
 
 
 @router.delete("/user/{user_id}")
